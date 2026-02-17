@@ -1,0 +1,82 @@
+/* UserAppointments.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #f0f9ff, #ecfdf5);
+}
+
+.appointments-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 28px;
+  color: #0f172a;
+  margin-bottom: 20px;
+}
+
+.message {
+  color: #1d4ed8;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.no-data {
+  color: #64748b;
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+.appointment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.appointment-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.appointment-card p {
+  margin: 8px 0;
+  color: #334155;
+}
+
+.status {
+  font-weight: bold;
+}
+
+.status.pending {
+  color: #f59e0b;
+}
+
+.status.approved {
+  color: #10b981;
+}
+
+.status.rejected {
+  color: #ef4444;
+}
+
+.cancel-btn {
+  margin-top: 10px;
+  padding: 10px 16px;
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cancel-btn:hover {
+  background-color: #dc2626;
+}
